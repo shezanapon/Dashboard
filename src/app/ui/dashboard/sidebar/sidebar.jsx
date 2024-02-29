@@ -10,6 +10,7 @@ import {
   MdAnalytics,
   MdPeople,
   MdWork,
+  MdLogout,
 } from "react-icons/md";
 import MenuLink from "./MenuLink";
 import Image from "next/image";
@@ -88,7 +89,7 @@ const Sidebar = () => {
 
         </div>
       </div>
-      <ul>
+      <ul className="styles.list">
         {menuItems.map((items) => (
           <li key={items.title}>
             <span className={styles.items}>{items.title}</span>
@@ -98,6 +99,10 @@ const Sidebar = () => {
           </li>
         ))}
       </ul>
+      <button className={styles.logout}>
+        <MdLogout/>
+        Logout
+      </button>
     </div>
   );
 };

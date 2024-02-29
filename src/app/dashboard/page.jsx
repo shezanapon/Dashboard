@@ -1,8 +1,11 @@
 import React from "react";
+import Card from "../ui/dashboard/card/card";
+import Transaction from "../ui/dashboard/transaction/Transaction";
 
 const Dashboard = () => {
   return <div>
-    Dashboard
+    <Card/>
+    <Transaction/>
   </div>;
 };
 
